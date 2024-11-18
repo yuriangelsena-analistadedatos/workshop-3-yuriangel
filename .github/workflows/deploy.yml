@@ -46,5 +46,6 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
+          LAMBDA_FUNCTION_NAME: ${{ secrets.api-workshop-3-yuriangel }}
         run: |
           aws lambda update-function-code --function-name api-workshop-3-yuriangel --zip-file fileb://function.zip
