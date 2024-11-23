@@ -11,7 +11,7 @@ describe('API Endpoints', () => {
   
  it('should return the status', async () => {
  const res = await request(app).get('/status');
- expect(res.statusaCode).toEqual(200);
+ expect(res.statusCode).toEqual(200);
  expect(res.body).toEqual({ status: 'API funcionando correctamente' });
  });
   
